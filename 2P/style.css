@@ -2,24 +2,25 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 body {
-    background-color: lightgrey;
+    background-color: rgb(231, 231, 231);
 }
 
 .container {
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 #box {
-    max-width: 600px;
-    padding: 1.25rem;
+    max-width: 80%;
+    padding: 20px 0 20px 20px;
     background-color: white;
     margin: 0 auto;
     margin-top: 50px;
-    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    box-shadow: 4px 3px 5px rgba(2, 2, 2, 0.2);
     border-radius: 12px;
 }
 
@@ -28,19 +29,27 @@ body {
 }
 
 .form-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
+}
+
+.child {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
 }
 
 .control {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-right: 20px;
 }
 
 label {
     font-size: 1rem;
+    font-weight: 600;
     margin-bottom: 4px;
 }
 
@@ -52,17 +61,20 @@ input, select, textarea {
 }
 
 #txt-control {
-    grid-column: 1 / span 2;
+    margin-top: 16px;
+    margin-right: 20px;
 }
 
 #txt-control textarea{
     width: 100%;
+    margin-top: 4px;
 }
 
 .button-container {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
+    margin-right: 20px;
 }
 
 button {
@@ -72,19 +84,30 @@ button {
     border-radius: 12px;
     color: white;
     transition: 0.3s ease-in;
+    box-shadow: 4px 3px 5px rgba(2, 2, 2, 0.2);
 }
 
 button:hover {
-    background-color: gray;
+    background-color: rgb(255, 88, 88);
     color: black;
     border: 2px solid red;
     transition: 0.3s ease-out;
     cursor: pointer;
 }
 
-@media (max-width: 460px) {
-    #txt-control {
-        grid-column: 1 / span 1;
+
+@media (max-width: 600px) {
+     .child {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
     }
-    
+
+    .control {
+        margin-top: 16px;
+    }
+
+    .child {
+        margin-top: 0px;
+    }
 }

@@ -14,50 +14,58 @@
             <h1>Job Application <span>(Web)</span></h1>
             <form action="server">
                 <div class="form-container">
-                    <div class="control">
-                        <label for="fname">First Name</label>
-                        <input type="text" placeholder="Enter First Name..." id="fname" name="fname">
+                    <div class="child">
+                        <div class="control">
+                            <label for="fname">First Name</label>
+                            <input type="text" placeholder="Enter First Name..." id="fname" name="fname">
+                        </div>
+                        <div class="control">
+                            <label for="lname">Last Name</label>
+                            <input type="text" placeholder="Enter Last Name..." id="lname" name="lname">
+                        </div>
                     </div>
-                    <div class="control">
-                        <label for="lname">Last Name</label>
-                        <input type="text" placeholder="Enter Last Name..." id="lname" name="lname">
-                    </div>
-                    <div class="control">
-                        <label for="email">Email</label>
-                        <input type="text" placeholder="Enter Email..." id="email" name="email">
-                    </div>
+                    <div class="child">
+                        <div class="control">
+                            <label for="email">Email</label>
+                            <input type="text" placeholder="Enter Email..." id="email" name="email">
+                        </div>
 
-                    <div class="control">
-                        <label for="job-role">Job Role</label>
-                        <select name="role" id="job-role">
-                            <option value="" id="jobrole">Select Job Role</option>
-                            <option value="prof">Professional</option>
-                            <option value="buss">Businessmen</option>
-                            <option value="stud">Student</option>
-                        </select>
+                        <div class="control">
+                            <label for="job-role">Job Role</label>
+                            <select name="role" id="job-role">
+                                <option value="" id="jobrole">Select Job Role</option>
+                                <option value="prof">Professional</option>
+                                <option value="buss">Businessmen</option>
+                                <option value="stud">Student</option>
+                            </select>
+                        </div>
                     </div>
-
                     <div id="txt-control">
                         <label for="address">Address</label>
                         <textarea name="address" id="address" cols="auto" rows="3"
                             placeholder="Enter Address"></textarea>
                     </div>
 
-                    <div class="control">
-                        <label for="city">City</label>
-                        <input type="text" placeholder="Enter City Name..." id="city" name="city">
+                    <div class="child">
+                        <div class="control">
+                            <label for="city">City</label>
+                            <input type="text" placeholder="Enter City Name..." id="city" name="city">
+                        </div>
+                        <div class="control">
+                            <label for="pincode">Pincode</label>
+                            <input type="text" placeholder="Enter Pincode..." id="pincode" name="pincode">
+                        </div>
                     </div>
-                    <div class="control">
-                        <label for="pincode">Pincode</label>
-                        <input type="text" placeholder="Enter Pincode..." id="pincode" name="pincode">
-                    </div>
-                    <div class="control">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" name="date" value="2024-02-02">
-                    </div>
-                    <div class="control">
-                        <label for="file">Upload Your CV</label>
-                        <input type="file" id="file" name="CV">
+
+                    <div class="child">
+                        <div class="control">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" value="2024-02-02">
+                        </div>
+                        <div class="control">
+                            <label for="file">Upload Your CV</label>
+                            <input type="file" id="file" name="CV">
+                        </div>
                     </div>
                 </div>
                 <div class="button-container">
